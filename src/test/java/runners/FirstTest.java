@@ -60,7 +60,7 @@ public class FirstTest {
 
         UserData newUser = new UserData();
 
-        newUser.setName("morpheusJP2");
+        newUser.setName("morpheusJP3");
         newUser.setJob("leader");
 
         juan.attemptsTo(
