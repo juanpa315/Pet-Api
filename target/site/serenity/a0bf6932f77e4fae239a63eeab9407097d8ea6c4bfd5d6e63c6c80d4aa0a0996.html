@@ -154,7 +154,7 @@
             $("#requirements-tabs").tabs();
             $("#test-tabs").tabs();
 
-            var requirementsTree = [];
+            var requirementsTree = [{"text":"Validate endopoint create User.","type":"feature","href":"a0bf6932f77e4fae239a63eeab9407097d8ea6c4bfd5d6e63c6c80d4aa0a0996.html","nodes":[],"selectable":false,"tags":["\u003ca href\u003d\u0027##beforetable\u0027\u003e\u003ci class\u003d\u0027bi bi-check-circle-fill success-icon \u0027 title\u003d\u0027SUCCESS\u0027\u003e\u003c/i\u003e\u003c/a\u003e","\u003cspan class\u003d\u0027feature-count\u0027\u003e1 scenario\u003c/span\u003e, \u003cspan class\u003d\u0027feature-count\u0027\u003e1 test case\u003c/span\u003e"]}];
 
             $('#tree').treeview({
                 data: requirementsTree,
@@ -201,10 +201,9 @@
             <span class="breadcrumbs">
             <a href='index.html'>Home</a> > <a href="capabilities.html">Requirements</a>
 
-                > <a href="c9873b882d0e4410ebeab92064bff6dcac6486d46bc2b91b7f77f6da53e68e48.html">Runners</a>
 
 
-                    > <span class="truncate-40">First test</span>
+                    > <span class="truncate-40">Validate endopoint create user.</span>
 
             </span>
         </div>
@@ -226,7 +225,7 @@
             <a href="#"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated </span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 19-11-2023 22:33</span>
     <br style="clear:left"/>
 </div>
 
@@ -243,7 +242,7 @@
 
                                     <div class="col-sm-12">
                                         <span>
-                                            <h2><i class="bi bi-book"></i> Feature: First test</h2>
+                                            <h2><i class="bi bi-book"></i> Feature: Validate endopoint create user.</h2>
                                         </span>
                                     </div>
                                 </div>
@@ -280,83 +279,90 @@
                                                 <h3>Feature Coverage By Scenario</h3>
 
                                                 <!-- REQUIREMENTS PIE CHART -->
+                                                    <div class="chart-container" style="position: relative; width:30vw">
+                                                        <canvas id="requirementChart" width="300" height="300"></canvas>
+                                                    </div>
 
                                             </div>
                                             <div class="col-sm-8">
-                                                <h3>Requirements Overview</h3>
+                                                <!--- TOC --->
+                                                <div id="toc">
+                                                    <h3>Overview</h3>
+                                                    <table class="table" id="toc-table">
+                                                                    <tr>
+                                                                        <td style="width:95%;" class="toc-title">
+                                                                            <span class="orphan-scenario-toc-entry">
+                                                                                    <a href="#6be33d8ab804fd8619c1de27ef47d64ff171001d166135820e620a5286c40bd7"
+                                                                                       title="View scenario details">
+                                                                                        <i class="bi bi-chat-dots"></i> Scenario: As a user Juan need to able to create my user on the API
+                                                                                    </a>
+                                                                                </span>
+                                                                        </td>
+                                                                        <td>
 
-                                                <div id="tree"></div>
+                                                                        </td>
+                                                                        <td style="width:5%;">
+                                                                            <table>
+                                                                                <tr>
+                                                                                    <td class="icons-bar">
+                                                                                        <a style="margin-left:0.5em;padding-right: 1.5em;"
+                                                                                           href="35374d247c71caba9ee0cc18aae8d9cf9f772439b43ab010c2ef5742cd896569.html"
+                                                                                           title="View test results">
+                                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                                                                            </a>
 
-                                                <!-- STATS -->
-    <div>
-        <h3><i class="bi bi-speedometer2"></i> Key Statistics</h3>
-        <div>
-            <table class="table table-striped table-hover">
-                <tbody>
-                <tr scope="row">
-                    <td>
-                        <i class="bi bi-card-checklist"></i> Number of Scenarios
-                    </td>
-                    <td>0</td>
-                </tr>
-                <tr scope="row">
-                    <td>
-                        <i class="bi bi-caret-right"></i> Total Number of Test Cases
-                    </td>
-                    <td>0</td>
-                </tr>
-                <tr scope="row">
-                    <td>
-                        <i class="bi bi-flag-fill"></i> Tests Started
-                    </td>
-                    <td></td>
-                </tr>
-                <tr scope="row">
-                    <td>
-                        <i class="bi bi-stop-circle"></i> Tests
-                        Finished
-                    </td>
-                    <td></td>
-                </tr>
-                <tr scope="row">
-                    <td>
-                        <i class="bi bi-stopwatch"></i> Total
-                        Duration
-                    </td>
-                    <td>0ms</td>
-                </tr>
-                <tr scope="row">
-                    <td>
-                        <i class="bi bi-trophy"></i> Fastest Test
-                    </td>
-                    <td>0ms</td>
-                </tr>
-                <tr scope="row">
-                    <td>
-                        <i class="bi bi-skip-start"></i> Slowest
-                        Test
-                    </td>
-                    <td>0ms</td>
-                </tr>
-                <tr scope="row">
-                    <td>
-                        <i class="bi bi-stopwatch"></i> Average
-                        Execution Time
-                    </td>
-                    <td>0ms</td>
-                </tr>
-                <tr scope="row">
-                    <td>
-                        <i class="bi bi-stopwatch-fill"></i> Total
-                        Execution Time
-                    </td>
-                    <td>0ms</td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-                                                <!-- END STATS -->
+
+                                                                                            <a style="margin-left:0.5em;padding-right: 1.5em;"
+                                                                                               href="35374d247c71caba9ee0cc18aae8d9cf9f772439b43ab010c2ef5742cd896569.html"
+                                                                                               title="View test results">
+                                                                                                <i class="bi bi-eyeglasses"></i>
+                                                                                            </a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                    </table>
+                                                </div>
+                                                <!--- END OF TOC --->
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <h3>Scenarios</h3>
+
+                                                    <a name="b7ada483-9215-41aa-9b4a-16790ea3deb8"></a>
+                                                    <p class="rule-tags inline-tag">
+                                                    </p>
+
+
+                                                        <div class="scenario-docs card" id="6be33d8ab804fd8619c1de27ef47d64ff171001d166135820e620a5286c40bd7">
+                                                            <div class="scenario-docs card-header success"
+                                                                 style="min-height:1.5em;">
+                                                                <div>
+                                                                        <span class="scenario-heading">
+                                                                            <a href="35374d247c71caba9ee0cc18aae8d9cf9f772439b43ab010c2ef5742cd896569.html"
+                                                                               title="View test results">Scenario: As a user Juan need to able to create my user on the API</a>
+                                                                        </span>
+
+                                                                        <span class="example-tags inline-tag">
+                                                                        </span>
+
+                                                                    <span class="scenario-result-icon">
+                                                                    
+
+                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                                                        </span>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="scenario-docs card-body">
+                                                                    <p>When He sends the username and job</p>
+                                                                    <p>Then The API create his user with the data send by Juan</p>
+                                                                <div class="examples">
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                             </div>
                                         </div>
                                     </div>
@@ -368,6 +374,9 @@
                                             <div class="col-sm-4">
                                                 <h3>Feature Coverage By Scenario</h3>
                                                 <!-- TEST RESULT PIE CHART -->
+                                                    <div class="chart-container" style="position: relative; width:30vw">
+                                                        <canvas id="resultChart" width="300" height="300"></canvas>
+                                                    </div>
                                             </div>
                                             <div class="col-sm-4">
                                                 <h4><i class="bi bi-check-square"></i> Test Outcomes</h4>
@@ -399,22 +408,22 @@
                     <td>
                         <i class="bi bi-card-checklist"></i> Number of Scenarios
                     </td>
-                    <td>0</td>
+                    <td>1</td>
                     <td>
                         <i class="bi bi-stopwatch"></i> Total
                         Duration
                     </td>
-                    <td>0ms</td>
+                    <td>4s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-caret-right"></i> Total Number of Test Cases
                     </td>
-                    <td>0</td>
+                    <td>1</td>
                     <td>
                         <i class="bi bi-trophy"></i> Fastest Test
                     </td>
-                    <td>0ms</td>
+                    <td>4s</td>
                 </tr>
                 <tr scope="row">
                     <td>
@@ -425,30 +434,30 @@
                         <i class="bi bi-skip-start"></i> Slowest
                         Test
                     </td>
-                    <td>0ms</td>
+                    <td>4s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-flag-fill"></i> Tests Started
                     </td>
-                    <td></td>
+                    <td>Nov 19, 2023 22:33:20</td>
                     <td>
                         <i class="bi bi-stopwatch"></i> Average
                         Execution Time
                     </td>
-                    <td>0ms</td>
+                    <td>4s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stop-circle"></i> Tests
                         Finished
                     </td>
-                    <td></td>
+                    <td>Nov 19, 2023 22:33:24</td>
                     <td>
                         <i class="bi bi-stopwatch-fill"></i> Total
                         Execution Time
                     </td>
-                    <td>0ms</td>
+                    <td>4s</td>
                 </tr>
                 </tbody>
             </table>
@@ -457,7 +466,38 @@
 
                                                 <h3><i class="bi bi-gear"></i> Automated Tests</h3>
 
-                                                    No automated tests were executed
+                                                    <table class="scenario-result-table table" id="scenario-results">
+                                                        <thead>
+                                                        <tr>
+                                                            <th>feature</th>
+                                                            <th class="test-name-column">Scenario</th>
+                                                            <th>Context</th>
+                                                            <th>Steps</th>
+                                                            <th>Started</th>
+                                                            <th>Total Duration</th>
+                                                            <th>Result</th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                                <tr class="scenario-result SUCCESS">
+                                                                    <td>
+                                                                            <a href="a0bf6932f77e4fae239a63eeab9407097d8ea6c4bfd5d6e63c6c80d4aa0a0996.html">Validate endopoint create User.</a>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="35374d247c71caba9ee0cc18aae8d9cf9f772439b43ab010c2ef5742cd896569.html">As a user Juan need to able to create my user on the API</a>
+                                                                    </td>
+                                                                    <td><span
+                                                                                style="display:none"></span>
+                                                                    </td>
+                                                                    <td>2</td>
+                                                                    <td>22:33:20</td>
+                                                                    <td>4s 179ms</td>
+                                                                    <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                style="display:none">SUCCESS</span>
+                                                                    </td>
+                                                                </tr>
+                                                        </tbody>
+                                                    </table>
 
                                             </div>
                                         </div>
@@ -471,6 +511,22 @@
                                             </div>
                                         </div>
 
+        <div class="row">
+            <div class="col-sm-12">
+                <h3>Tags</h3>
+                    <div class="card">
+                        <div class="card-body">
+                            <div>
+                                    <a href="e921599501d7111069704763455303d1f2128839cf5aa3f11db4adea68d1bc35.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> All&nbsp;&nbsp;&nbsp;1
+                                    </span>
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
                                     </div>
                                 </div>
                             </div>
@@ -497,21 +553,21 @@
 
         // Options define for display value on top of bars
         const outcomeDetailsReports = [
-            { title: 'Passing Test Cases', link: "d57de26914277cf4d865f4305c099a81dac577d91da4b102bb3ac0e8d56ed760.html" },
-            { title: 'Pending Test Cases', link: "f68aaf5683130ee8dff3fde00069f90b7da32397c88fa4b170851cbe62456132.html" },
-            { title: 'Ignored Test Cases', link: "21e684a2761f4ddc6bb7fb82706ccc772bea7efd6a50ea1b059cec36b57f6027.html" },
-            { title: 'Skipped Test Cases', link: "caeecb551e337159631ce72eee9438bd24d82263543df9e27bddd0dc2882b7a9.html" },
-            { title: 'Aborted Test Cases',  link: "c7ab94ef4c07ac686a197d9487291ba77827864544f23ff42f871945803b7060.html"},
-            { title: 'Failed Test Cases', link: "7154b71fae74d268c81a0088c04191d97c0cf4562eeec317825c79c2c621852b.html"  },
-            { title: 'Broken Test Cases', link: "5cb8a4984f3497df176971eaa44aff3a3db37de956ed54e36e1d77b094c77d4a.html"    },
-            { title: 'Compromised Test Cases',  link: "5e5fe6a22a828d89c42e84a3c259c0f33f54b68403c87741bffbaabad6cab873.html" },
+            { title: 'Passing Test Cases', link: "6b07d7ce8a74b53e53266c595b15c70a36320610e406531d7a8e99cfcbb03e75.html" },
+            { title: 'Pending Test Cases', link: "b995afa62e66bbd131e38e8984a8453b270f0ff377c9c2084cf5d50fba08d434.html" },
+            { title: 'Ignored Test Cases', link: "37d3e80323994ff451f3d2253dadea7c6a0f87dc09e147fb32ad26e972abc993.html" },
+            { title: 'Skipped Test Cases', link: "50daf75451ba839123190c85c0793b25b7a446fde2a598a2adb7eb23b2465ea3.html" },
+            { title: 'Aborted Test Cases',  link: "c03af098286623c538871fa00c5d0928b5ff703e0126647424fd00c4fc7569c6.html"},
+            { title: 'Failed Test Cases', link: "a2f2c8386a69e57174c39a19b2cfd42d9735ae5d8a02d524093c0b6a4ab3bef4.html"  },
+            { title: 'Broken Test Cases', link: "1a93cccb20afcb3323953e65d7b212b9e9c22d2be9b00258822fa1b6295b31ea.html"    },
+            { title: 'Compromised Test Cases',  link: "de50eaa831c294d8029d62742179ea9ef961f2f922221f1bf2568b5b93aa0b6e.html" },
         ]
         const outcomeData = {
             labels: ['Passing Test Cases', 'Pending Test Cases', 'Ignored Test Cases', 'Skipped Test Cases', 'Aborted Test Cases', 'Failed Test Cases', 'Broken Test Cases', 'Compromised Test Cases','Undefined Test Cases'],
             datasets: [{
                 label: 'Test Results',
                 fill: false,
-                data: [{meta: 'Passing tests', value: 0}, {meta: 'Pending tests', value: 0}, {meta: 'Ignored tests', value: 0}, {meta: 'Skipped tests', value: 0}, {meta: 'Aborted tests', value: 0}, {meta: 'Failing tests', value: 0}, {meta: 'Broken tests', value: 0}, {meta: 'Compromised tests', value: 0}],
+                data: [{meta: 'Passing tests', value: 1}, {meta: 'Pending tests', value: 0}, {meta: 'Ignored tests', value: 0}, {meta: 'Skipped tests', value: 0}, {meta: 'Aborted tests', value: 0}, {meta: 'Failing tests', value: 0}, {meta: 'Broken tests', value: 0}, {meta: 'Compromised tests', value: 0}],
                 backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                 borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                 borderWidth: 1,
@@ -562,7 +618,7 @@
                         ctx.font = fontSize + "em sans-serif";
                         ctx.textBaseline = "middle";
 
-                        var text = " "
+                        var text = "100%"
                         textX = 10 + Math.round((width - ctx.measureText(text).width) / 2);
                         textY = (height / 2) - 40;
 
@@ -591,14 +647,14 @@
 
         // Options define for display value on top of bars
         const requirementsOutcomeDetailsReports = [
-            { title: 'Passing Test Cases', link: "d57de26914277cf4d865f4305c099a81dac577d91da4b102bb3ac0e8d56ed760.html" },
-            { title: 'Pending Test Cases', link: "f68aaf5683130ee8dff3fde00069f90b7da32397c88fa4b170851cbe62456132.html" },
-            { title: 'Ignored Test Cases', link: "21e684a2761f4ddc6bb7fb82706ccc772bea7efd6a50ea1b059cec36b57f6027.html" },
-            { title: 'Skipped Test Cases', link: "caeecb551e337159631ce72eee9438bd24d82263543df9e27bddd0dc2882b7a9.html" },
-            { title: 'Aborted Test Cases',  link: "c7ab94ef4c07ac686a197d9487291ba77827864544f23ff42f871945803b7060.html"},
-            { title: 'Failed Test Cases', link: "7154b71fae74d268c81a0088c04191d97c0cf4562eeec317825c79c2c621852b.html"  },
-            { title: 'Broken Test Cases', link: "5cb8a4984f3497df176971eaa44aff3a3db37de956ed54e36e1d77b094c77d4a.html"    },
-            { title: 'Compromised Test Cases',  link: "5e5fe6a22a828d89c42e84a3c259c0f33f54b68403c87741bffbaabad6cab873.html" },
+            { title: 'Passing Test Cases', link: "6b07d7ce8a74b53e53266c595b15c70a36320610e406531d7a8e99cfcbb03e75.html" },
+            { title: 'Pending Test Cases', link: "b995afa62e66bbd131e38e8984a8453b270f0ff377c9c2084cf5d50fba08d434.html" },
+            { title: 'Ignored Test Cases', link: "37d3e80323994ff451f3d2253dadea7c6a0f87dc09e147fb32ad26e972abc993.html" },
+            { title: 'Skipped Test Cases', link: "50daf75451ba839123190c85c0793b25b7a446fde2a598a2adb7eb23b2465ea3.html" },
+            { title: 'Aborted Test Cases',  link: "c03af098286623c538871fa00c5d0928b5ff703e0126647424fd00c4fc7569c6.html"},
+            { title: 'Failed Test Cases', link: "a2f2c8386a69e57174c39a19b2cfd42d9735ae5d8a02d524093c0b6a4ab3bef4.html"  },
+            { title: 'Broken Test Cases', link: "1a93cccb20afcb3323953e65d7b212b9e9c22d2be9b00258822fa1b6295b31ea.html"    },
+            { title: 'Compromised Test Cases',  link: "de50eaa831c294d8029d62742179ea9ef961f2f922221f1bf2568b5b93aa0b6e.html" },
             { title: 'Undefined Test Cases',  link: "" },
         ]
         const requirementsOutcomeData = {
@@ -606,7 +662,7 @@
             datasets: [{
                 label: 'Feature Coverage',
                 fill: false,
-                data: [{meta: 'Passing tests', value: 0}, {meta: 'Pending tests', value: 0}, {meta: 'Ignored tests', value: 0}, {meta: 'Skipped tests', value: 0}, {meta: 'Aborted tests', value: 0}, {meta: 'Failing tests', value: 0}, {meta: 'Broken tests', value: 0}, {meta: 'Compromised tests', value: 0}],
+                data: [{meta: 'Passing tests', value: 1}, {meta: 'Pending tests', value: 0}, {meta: 'Ignored tests', value: 0}, {meta: 'Skipped tests', value: 0}, {meta: 'Aborted tests', value: 0}, {meta: 'Failing tests', value: 0}, {meta: 'Broken tests', value: 0}, {meta: 'Compromised tests', value: 0}],
                 backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                 borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                 borderWidth: 1,
@@ -657,7 +713,7 @@
                         ctx.font = fontSize + "em sans-serif";
                         ctx.textBaseline = "middle";
 
-                        var text = " "
+                        var text = "100%"
                         textX = 10 + Math.round((width - ctx.measureText(text).width) / 2);
                         textY = (height / 2) - 40;
 
@@ -688,21 +744,21 @@
         // Options define for display value on top of bars
 
         const severityDetailsReports = [
-            { title: 'Passing Scenarios', link: "d57de26914277cf4d865f4305c099a81dac577d91da4b102bb3ac0e8d56ed760.html" },
-            { title: 'Pending Scenarios', link: "f68aaf5683130ee8dff3fde00069f90b7da32397c88fa4b170851cbe62456132.html" },
-            { title: 'Ignored Scenarios', link: "21e684a2761f4ddc6bb7fb82706ccc772bea7efd6a50ea1b059cec36b57f6027.html" },
-            { title: 'Skipped Scenarios', link: "caeecb551e337159631ce72eee9438bd24d82263543df9e27bddd0dc2882b7a9.html" },
-            { title: 'Aborted Scenarios',  link: "c7ab94ef4c07ac686a197d9487291ba77827864544f23ff42f871945803b7060.html"},
-            { title: 'Failed Scenarios', link: "7154b71fae74d268c81a0088c04191d97c0cf4562eeec317825c79c2c621852b.html"  },
-            { title: 'Broken Scenarios', link: "5cb8a4984f3497df176971eaa44aff3a3db37de956ed54e36e1d77b094c77d4a.html"    },
-            { title: 'Compromised Scenarios',  link: "5e5fe6a22a828d89c42e84a3c259c0f33f54b68403c87741bffbaabad6cab873.html" },
+            { title: 'Passing Scenarios', link: "6b07d7ce8a74b53e53266c595b15c70a36320610e406531d7a8e99cfcbb03e75.html" },
+            { title: 'Pending Scenarios', link: "b995afa62e66bbd131e38e8984a8453b270f0ff377c9c2084cf5d50fba08d434.html" },
+            { title: 'Ignored Scenarios', link: "37d3e80323994ff451f3d2253dadea7c6a0f87dc09e147fb32ad26e972abc993.html" },
+            { title: 'Skipped Scenarios', link: "50daf75451ba839123190c85c0793b25b7a446fde2a598a2adb7eb23b2465ea3.html" },
+            { title: 'Aborted Scenarios',  link: "c03af098286623c538871fa00c5d0928b5ff703e0126647424fd00c4fc7569c6.html"},
+            { title: 'Failed Scenarios', link: "a2f2c8386a69e57174c39a19b2cfd42d9735ae5d8a02d524093c0b6a4ab3bef4.html"  },
+            { title: 'Broken Scenarios', link: "1a93cccb20afcb3323953e65d7b212b9e9c22d2be9b00258822fa1b6295b31ea.html"    },
+            { title: 'Compromised Scenarios',  link: "de50eaa831c294d8029d62742179ea9ef961f2f922221f1bf2568b5b93aa0b6e.html" },
         ]
         const severityData = {
             labels: ['Passing', 'Pending', 'Ignored', 'Skipped', 'Aborted', 'Failed', 'Broken', 'Compromised'],
             datasets: [
                 {
                     label: 'Automated',
-                    data: [0,0,0,0,0,0,0,0],
+                    data: [1,0,0,0,0,0,0,0],
                     backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                     borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                     borderWidth: 1
@@ -766,14 +822,14 @@
 
         // Options define for display value on top of bars
         const durationDetailsReports = [
-                {title: "Under 1 second", link: "ae35f43f52beb148bf19c1e29138f727b6df4c121f5b76c38cbbefcf618eec77.html"},
-                {title: "1 to 10 seconds", link: "af6553e5686dce0c5458c7f0a829799f096f1231b134f00463cb68b343eb4363.html"},
-                {title: "10 to 30 seconds", link: "d436bb1b174289b55b97b9336d8817d7817afb80d6db25c9ed3b892055a89935.html"},
-                {title: "30 to 60 seconds", link: "bff531790c3c3cb891d2adf4df1592b1ef42838c79055c157e6a9fcc98ed9439.html"},
-                {title: "1 to 2 minutes", link: "c7b1cfefdf10b102248339019b0923212e258ab28d3bb5a13e1ab0c16c0fddee.html"},
-                {title: "2 to 5 minutes", link: "e32edbb1ebfe62751d944d48ca0fb0d1bade8c175083f975b8aa8f66b61ba267.html"},
-                {title: "5 to 10 minutes", link: "4c9e2854630515c247047881ade742113e6d488083485aada99126c844a778e2.html"},
-                {title: "10 minutes or over", link: "ffad6bd2978ea6c673f5873aa7c158a2277f89dc51956d0d93e44bae732e1076.html"},
+                {title: "Under 1 second", link: "8d4e500eff4d6061e9aafa782fc97cd01b8e96548365756d99c9c08143f42975.html"},
+                {title: "1 to 10 seconds", link: "a2b006526ceb6aec62e713ec674b0af0eb95bc90064afbd9cabde16fc9452e4b.html"},
+                {title: "10 to 30 seconds", link: "9303b65879a3e71dc8151b2775ae277805f4ae179158c722902d8f2fa8b2093f.html"},
+                {title: "30 to 60 seconds", link: "1d90772acbb5d4f1cf540d701d1b8f8c1bd8562184759dc29a7180c578e4fcde.html"},
+                {title: "1 to 2 minutes", link: "f6c8a88457eaab75fb6c902ec4703c5b45c72723e6c123c6e7a56d0f67bb7fb6.html"},
+                {title: "2 to 5 minutes", link: "76d879eb6bb0670d4cafdc3da58328e53f8d8bf4b53e7a0a9a774fe7423f685d.html"},
+                {title: "5 to 10 minutes", link: "88e4cc230a716005f94057cd2285c43a9ea7e3f428279e1ab4537f361475d9ca.html"},
+                {title: "10 minutes or over", link: "560e5d3e28c7a4b474b9169be82ed05113af00a15f8e3c37a01df202a0163b7b.html"},
         ]
         // The Severity bar chart
         const durationChartCtx = document.getElementById('durationChart');
@@ -785,7 +841,7 @@
             datasets: [{
                 label: 'Number of tests per duration',
                 fill: false,
-                data: ['0','0','0','0','0','0','0','0'],
+                data: ['0','1','0','0','0','0','0','0'],
                 backgroundColor: 'rgba(83, 146, 255,0.5)',
                 borderColor: 'rgba(83, 146, 255, 1)',
             }]

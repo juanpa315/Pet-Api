@@ -13,7 +13,6 @@ import questions.ResponseCode;
 import tasks.GetListUsers;
 import tasks.RegisterUser;
 import tasks.UpdateUser;
-
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.notNullValue;

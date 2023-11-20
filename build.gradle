@@ -33,6 +33,7 @@ ext {
     junit_vintage_engine_version="5.9.3"
     logback_classic_version="1.2.11"
     assertj_core_version="3.23.1"
+    lombok_version="1.18.30"
 }
 
 dependencies {
@@ -52,6 +53,8 @@ dependencies {
         implementation "ch.qos.logback:logback-classic:${logback_classic_version}"
         testImplementation "org.assertj:assertj-core:${assertj_core_version}"
         testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:${junit_jupiter_engine_version}"
+        compileOnly "org.projectlombok:lombok:${lombok_version}"
+
     }
 }
 
