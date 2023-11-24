@@ -24,6 +24,9 @@ public class UpdateUser implements Task{
 
     @Override
     public <T extends Actor> void performAs(T actor) {
+
+        actor.remember("newUserData", newUserData);
+
         actor.attemptsTo(
             Put.to("api/users/"+idUser).with(
                 requestSpecification -> requestSpecification.contentType(ContentType.JSON).body(newUserData)

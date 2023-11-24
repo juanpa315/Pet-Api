@@ -11,6 +11,7 @@ private String firstName;
 @JsonProperty("last_name")
 private String lastName;
 private String avatar;
+private String losa;
 
 public Integer getId() {
 return id;
@@ -50,6 +51,14 @@ return avatar;
 
 public void setAvatar(String avatar) {
 this.avatar = avatar;
+}
+
+public String getLosa() {
+return losa;
+}
+
+public void setLosa(String losa) {
+this.losa = losa;
 }
 
 }

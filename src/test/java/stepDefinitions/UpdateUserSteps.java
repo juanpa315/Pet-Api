@@ -21,14 +21,13 @@ public class UpdateUserSteps {
         actor = BaseSteps.createActor();
     }
 
-    @When("He consult his data by id and sends his name and new job")
-    public void heConsultHisDataByIdAndSendsHisNameAndNewJob() {
-        int idUser = 672;
+    @When("He consult his data by id {int} and sends his name {string} and new job {string}")
+public void heConsultHisDataByIdAndSendsHisNameAndNewJob(Integer idUser, String userName, String newJob) {
 
         UserData newUserData = new UserData();
 
-        newUserData.setName("morpheusJP3");
-        newUserData.setJob("leader3");
+        newUserData.setName(userName);
+        newUserData.setJob(newJob);
 
         actor.attemptsTo(
                 UpdateUser.withInfo(idUser, newUserData));
@@ -36,6 +35,12 @@ public class UpdateUserSteps {
 
     @Then("He can see his userdata updated on the API")
     public void heCanSeeHisUserdataUpdatedOnTheAPI() {
+
+        UserData rememberedUserData = actor.recall("newUserData");
+        
+        System.out.println("the name is: "+ rememberedUserData.getName());
+        System.out.println("The job is: "+rememberedUserData.getJob());
+
         actor.should(
                 seeThat("The status code", ResponseCode.was(), equalTo(200)));
 

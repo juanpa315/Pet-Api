@@ -15,10 +15,11 @@ import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.notNullValue;
 
+import java.util.List;
+
 public class GetListUsersSteps {
 
         private Actor actor;
-        
 
         @Before
         public void setUp() {
@@ -41,8 +42,28 @@ public class GetListUsersSteps {
         @And("He can see the user list has the correct structure")
         public void heCanSeeTheUserListHasTheCorrectStructure() {
 
+                //get a list with all user on the API
+                List<Datum> listUsers = new GetAllUsers().answeredBy(actor).getData();
+
+                for (int i = 0; i < listUsers.size(); i++) {
+
+                        Datum user1 = listUsers.get(i);
+
+                        actor.should(
+                                        seeThat("The id", act -> user1.getId(), notNullValue()),
+                                        seeThat("The email", act -> user1.getEmail(), notNullValue()),
+                                        seeThat("The first_name", act -> user1.getFirstName(), notNullValue()),
+                                        seeThat("The last_name", act -> user1.getLastName(), notNullValue()),
+                                        seeThat("The avatar", act -> user1.getAvatar(), notNullValue()));
+
+                }
+
+        }
+
+        @And("He can see the user with id {int} is not null")
+        public void heCanSeeTheUserWithIdIsNotNull(Integer id) {
                 Datum user = new GetAllUsers().answeredBy(actor)
-                                .getData().stream().filter(x -> x.getId() == 1).findFirst().orElse(null);
+                                .getData().stream().filter(x -> x.getId() == id).findFirst().orElse(null);
 
                 actor.should(
                                 seeThat("The user", act -> user, notNullValue()));

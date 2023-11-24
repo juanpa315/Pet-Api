@@ -1,1 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="Validate the endopoint get List Users" skipped="0" tests="1" time="0.75" timestamp="2023-11-19 10:33:24"><testcase name="As a user, Juan needs to get the list of all users from de users API"/></testsuite>
