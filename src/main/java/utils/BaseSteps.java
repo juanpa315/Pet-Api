@@ -3,7 +3,7 @@ package utils;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.rest.abilities.CallAnApi;
 
-
+//Class for create an actor and define the API base URL
 public class BaseSteps {
 
     public static final String REST_API_URL = "https://reqres.in/";
