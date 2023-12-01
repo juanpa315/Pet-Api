@@ -3,12 +3,14 @@ package stepDefinitions;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static org.hamcrest.CoreMatchers.equalTo;
 
+import java.util.List;
+
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import models.UserData;
+import net.serenitybdd.rest.Ensure;
 import net.serenitybdd.screenplay.Actor;
-import questions.ResponseCode;
 import tasks.UpdateUser;
 import utils.BaseSteps;
 
@@ -22,7 +24,7 @@ public class UpdateUserSteps {
     }
 
     @When("He consult his data by id {int} and sends his name {string} and new job {string}")
-public void heConsultHisDataByIdAndSendsHisNameAndNewJob(Integer idUser, String userName, String newJob) {
+    public void heConsultHisDataByIdAndSendsHisNameAndNewJob(Integer idUser, String userName, String newJob) {
 
         UserData newUserData = new UserData();
 
@@ -37,13 +39,9 @@ public void heConsultHisDataByIdAndSendsHisNameAndNewJob(Integer idUser, String 
     public void heCanSeeHisUserdataUpdatedOnTheAPI() {
 
         UserData rememberedUserData = actor.recall("newUserData");
-        
-        System.out.println("the name is: "+ rememberedUserData.getName());
-        System.out.println("The job is: "+rememberedUserData.getJob());
 
-        actor.should(
-                seeThat("The status code", ResponseCode.was(), equalTo(200)));
-
+        Ensure.that("The Name was updated correctly ", response -> response.body("name", equalTo(rememberedUserData.getName())));
+        Ensure.that("The Job was updated correctly ", response -> response.body("job", equalTo(rememberedUserData.getJob())));
     }
 
 }

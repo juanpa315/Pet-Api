@@ -5,6 +5,7 @@ public class UserData {
 
 private String name;
 private String job;
+private String updatedAt;
 
 public String getName() {
 return name;
@@ -20,6 +21,14 @@ return job;
 
 public void setJob(String job) {
 this.job = job;
+}
+
+public String getUpdatedAt(String updatedAt) {
+return updatedAt;
+}
+
+public void setUpdatedAt(String updatedAt) {
+this.updatedAt = updatedAt;
 }
 
 }
