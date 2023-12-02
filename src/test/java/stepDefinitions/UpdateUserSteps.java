@@ -1,9 +1,9 @@
 package stepDefinitions;
 
-import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
+
 import static org.hamcrest.CoreMatchers.equalTo;
 
-import java.util.List;
+
 
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Then;
