@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Gestion Ordenes de compra e inventario","Consultar una orden de compra existente","SUCCESS","2024-05-21T22:08:25.3181641-05:00[America/Bogota]","0.0","5.06"
+"Gestion Ordenes de compra e inventario","Buscar orden de compra creada","SUCCESS","2024-05-21T22:08:31.0035327-05:00[America/Bogota]","0.0","0.73"
+"Gestion Ordenes de compra e inventario","Verificar el inventario de ventas","SUCCESS","2024-05-21T22:08:32.4108402-05:00[America/Bogota]","0.0","0.56"
+"Gestion Ordenes de compra e inventario","Eliminar una orden de compra","SUCCESS","2024-05-21T22:08:33.0554916-05:00[America/Bogota]","0.0","0.53"

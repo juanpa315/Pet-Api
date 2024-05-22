@@ -1,0 +1,61 @@
+
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+Q
+!src/test/java/runners/Runner.java,0\4\04f3c2dbaa15e18ee15e4ace68065ab30d37d4cb
+l
+<src/test/java/stepDefinitions/ConsultarOrdenCompraSteps.java,8\4\84d6181a0b9b60ba97e168c35119f25b22939662
+b
+2src/test/java/stepDefinitions/CreateUserSteps.java,7\7\77fae6295685f720074cdf35419619b49f2997e6
+R
+"src/main/java/utils/BaseSteps.java,5\9\595e98267da2648472cb00a83c497b18c7995af2
+U
+%src/main/java/tasks/RegisterUser.java,1\3\13082dfa4c57b7035edc4d81adfcfbc42cec798c
+X
+(src/main/java/tasks/ConsultarCompra.java,6\4\64ed34be7c829b320c6471f1537bcad2708ce949
+U
+%src/main/java/tasks/GetListUsers.java,b\1\b17ccc6f16f5449635f06bc909ce2ba789a07b43
+Y
+)src/main/java/questions/ResponseCode.java,a\7\a73c4d2da86584945a5980b92677dc1b699374f7
+T
+$src/main/java/interactions/Post.java,7\b\7b6eb30a8ddeb8608680a9b7a7c8632a36052fd4
+\
+,src/main/java/questions/GetLastResponse.java,0\b\0ba8ec65b09c7f501f1182cc1e719dcf9cf74d76
+X
+(src/main/java/questions/GetAllUsers.java,f\d\fd57f8a543f28db0e8057eab64842e53292a992c
+d
+4src/test/java/stepDefinitions/GetListUsersSteps.java,0\7\07d04401ca93fe5b24bcddbc528c68a664de1b23
+b
+2src/test/java/stepDefinitions/UpdateUserSteps.java,c\7\c76fd71d81c8ecd80c9a9840d028b7fe504a12ff
+\
+,src/main/java/questions/ObtenerIdCompra.java,d\1\d145c9569190cb07f0a3c1a417f25753330dab2e
+R
+"src/main/java/models/UserData.java,9\e\9e436ffd36612d5e568bd6b139bc5ff4ddcf4866
+P
+ src/main/java/models/compra.java,9\0\9084751bc8747da7bf824e649b3d6ee6c5320682
+P
+ src/main/java/models/Compra.java,0\2\02fbbabb4ff29a74763c10758ebdca977fdc6a91
+O
+src/main/java/models/Datum.java,a\e\ae24527271b24e0984363030a9bb0d6996ac0dcf
+Z
+*src/main/java/questions/ObtenerCompra.java,f\b\fb3da7db60064fd8b33719492fb3212c3bec1c4c
+c
+3src/test/java/stepDefinitions/OrdenCompraSteps.java,1\1\114aea5aee943b3ac90e21e83d2278217673667f
+Q
+!src/main/java/utils/idRandom.java,e\0\e01f62c21158da1242ac08992d819b87c83c4974
+T
+$src/main/java/tasks/CrearCompra.java,c\3\c368b76ba34d4f8364a7a0a0f939c48f8ce80318
+T
+$src/main/java/models/Inventario.java,6\4\64f14b9fe77955d1c17aaaac455e6fbd694be7d7
+O
+src/main/java/models/Users.java,4\a\4aee28007867b22611b1790d841cb15b0247314c
+\
+,src/main/java/tasks/ConsultarInventario.java,d\8\d84696242910c550092dafd350c08e1f2c633a5e
+^
+.src/main/java/questions/ObtenerInventario.java,1\c\1cfd9e5e0725db7201c8861bfde6d0f93868020f
+Q
+!src/main/java/models/Support.java,4\5\45d93eba27fefe0d6477991efa4a36a0f75ade01
+V
+&src/main/java/tasks/EliminarOrden.java,0\2\0274ac81456fa31ead21e77b29b2905dbfcdf4f4
+<
+build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
