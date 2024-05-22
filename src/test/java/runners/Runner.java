@@ -11,7 +11,7 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
         features = "src/test/resources/features",
         glue =  "stepDefinitions",
         snippets = CucumberOptions.SnippetType.CAMELCASE,
-        tags = "@Post"
+        tags = "@pets"
         
 
     )
